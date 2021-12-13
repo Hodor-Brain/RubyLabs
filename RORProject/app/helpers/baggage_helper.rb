@@ -1,0 +1,2 @@
+module BaggageHelper
+end

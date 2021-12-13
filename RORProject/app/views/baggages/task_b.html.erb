@@ -1,0 +1,18 @@
+<style>
+    body {
+        font-size: large;
+    }
+    h1{
+        font-size: xxx-large;
+    }
+</style>
+
+<h1>Task b</h1>
+
+<ul>
+  <li>Baggage with more than two items: <%=@baggage_more_than_two %></li>
+  <li>Baggage with more than average amount of items (<%=@average_count %>): <%=@baggage_more_than_average %></li>
+</ul>
+
+<%= link_to "To query list", queriesList_path %>
+<%= link_to "Main", root_path %>

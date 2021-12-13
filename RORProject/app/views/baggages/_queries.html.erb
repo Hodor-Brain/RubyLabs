@@ -1,0 +1,22 @@
+<style>
+    body {
+        font-size: large;
+    }
+    h1{
+        font-size: xxx-large;
+    }
+</style>
+
+<ul>
+  <% @baggages.each do |baggage| %>
+    <li>
+      <a href="<%= baggage_path(baggage) %>">
+        Count : <%= baggage.count %>
+        Total weight : <%= baggage.total_weight %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "To query list", queriesList_path %>
+<%= link_to "Main", root_path %>

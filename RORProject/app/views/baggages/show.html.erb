@@ -1,0 +1,20 @@
+<style>
+    body {
+        font-size: large;
+    }
+    h1{
+        font-size: xxx-large;
+    }
+</style>
+
+<h1>Count : <%= @baggage.count %></h1>
+
+<p>Total weight : <%= @baggage.total_weight %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_baggage_path(@baggage) %></li>
+  <li><%= link_to "Delete", baggage_path(@baggage),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+  <%= link_to "Main", root_path %>
+</ul>

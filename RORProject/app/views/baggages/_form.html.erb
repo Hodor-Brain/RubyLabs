@@ -1,0 +1,21 @@
+<%= form_with model: @baggage do |form| %>
+  <div>
+    <%= form.label :count %><br>
+    <%= form.text_field :count %>
+    <% @baggage.errors.full_messages_for(:count).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :total_weight %><br>
+    <%= form.text_field :total_weight %>
+    <% @baggage.errors.full_messages_for(:total_weight).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
